@@ -1,0 +1,154 @@
+ISim log file
+Running: E:\Master Degree\PCSUPL\Stack Conveyor\TB_CONV_Unit_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/Master Degree/PCSUPL/Stack Conveyor/TB_CONV_Unit_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 5000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_conv_unit/uut/U_ROM_UNIT/U_ROM/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /tb_conv_unit/uut/U_ROM_UNIT/U_ROM/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 0 ps, Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 70 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 160 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 200 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 240 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 300 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 330 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 370 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 450 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 510 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 550 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 610 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 640 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 680 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 760 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 820 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 860 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 920 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 950 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 990 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1160 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1200 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1240 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1300 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1330 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1370 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1450 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1510 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1550 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1610 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1640 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1680 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1850 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1890 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1930 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+
+** Failure:End of simulation
+User(VHDL) Code Called Simulation Stop
+In process TB_CONV_Unit.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.
+# restart
+# restart
+# restart
+# restart
+# run all
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_conv_unit/uut/U_ROM_UNIT/U_ROM/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 0 ps, Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 70 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 160 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 200 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 240 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 300 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 330 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 370 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 450 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 510 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 550 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 610 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 640 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 680 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 760 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 820 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 860 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 920 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 950 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 990 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1160 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1200 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1240 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1300 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1330 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1370 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1450 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1510 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1550 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1610 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1640 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1680 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1850 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1890 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1930 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+
+** Failure:End of simulation
+User(VHDL) Code Called Simulation Stop
+In process TB_CONV_Unit.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.
+# restart
+# restart
+# restart
+# restart
+# run all
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_conv_unit/uut/U_ROM_UNIT/U_ROM/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 0 ps, Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 70 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 160 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 200 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 240 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 300 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 330 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 370 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 450 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 510 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 550 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 610 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 640 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 680 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 760 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 820 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 860 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 920 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 950 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 990 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1160 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1200 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1240 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1300 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1330 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1370 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1450 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1510 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1550 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1610 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1640 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1680 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1850 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1890 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1930 ns(4), Instance /tb_conv_unit/uut/U_RAM_UNIT/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+
+** Failure:End of simulation
+User(VHDL) Code Called Simulation Stop
+In process TB_CONV_Unit.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.

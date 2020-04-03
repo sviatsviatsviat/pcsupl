@@ -1,0 +1,38 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o E:/Master Degree/PCSUPL/Stack Conveyor/TB_CONV_Unit_isim_beh.exe -prj E:/Master Degree/PCSUPL/Stack Conveyor/TB_CONV_Unit_beh.prj work.TB_CONV_Unit 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack Conveyor/StackMP.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack Conveyor/ROMC.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack Conveyor/ROM.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack Conveyor/OB_UNIT.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack Conveyor/RAM.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack Conveyor/OB_UNIT_X.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack Conveyor/LIFO.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack Conveyor/C_ROM_UNIT.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack Conveyor/CONV.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack Conveyor/CONV_Unit.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack Conveyor/TB_CONV_Unit.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package stackmp
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity CONV [conv_default]
+Compiling architecture behavioral of entity ROM [rom_default]
+Compiling architecture behavioral of entity ROMC [romc_default]
+Compiling architecture behavioral of entity C_ROM_UNIT [c_rom_unit_default]
+Compiling architecture behavioral of entity RAM [ram_default]
+Compiling architecture behavioral of entity LIFO [\LIFO(6)\]
+Compiling architecture behavioral of entity OB_UNIT [ob_unit_default]
+Compiling architecture structural of entity OB_UNIT_X [ob_unit_x_default]
+Compiling architecture structural of entity CONV_Unit [conv_unit_default]
+Compiling architecture behavior of entity tb_conv_unit
+Time Resolution for simulation is 1ps.
+Compiled 24 VHDL Units
+Built simulation executable E:/Master Degree/PCSUPL/Stack Conveyor/TB_CONV_Unit_isim_beh.exe
+Fuse Memory Usage: 35228 KB
+Fuse CPU Usage: 437 ms

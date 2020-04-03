@@ -1,0 +1,34 @@
+Command line:
+   TB_OB_UNIT_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61240
+
+Wed Apr 01 21:23:25 2020
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5165.03 Meg
+
+ Total Signals          : 29
+ Total Nets             : 85
+ Total Signal Drivers   : 19
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 12
+ Total Traceable Variables  : 34
+ Total Scalar Nets and Variables : 592
+
+** Failure:End of simulation
+User(VHDL) Code Called Simulation Stop
+In process TB_OB_UNIT.vhd:stim_proc 
+ 
+
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 4693.17 Meg
+
+Wed Apr 01 21:47:49 2020
+

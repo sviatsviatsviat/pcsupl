@@ -1,0 +1,3 @@
+vhdl work "GPRMP.vhd"
+vhdl work "REGA.vhd"
+vhdl work "REGA_UNIT.vhd"

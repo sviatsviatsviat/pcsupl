@@ -1,0 +1,4 @@
+vhdl work "GPRMP.vhd"
+vhdl work "RAM_IF.vhd"
+vhdl work "RAM.vhd"
+vhdl work "RAM_UNIT.vhd"

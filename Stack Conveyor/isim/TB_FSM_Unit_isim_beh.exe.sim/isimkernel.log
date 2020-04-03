@@ -1,0 +1,34 @@
+Command line:
+   TB_FSM_Unit_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58081
+
+Tue Mar 24 15:32:14 2020
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 5165.02 Meg
+
+ Total Signals          : 154
+ Total Nets             : 2444
+ Total Signal Drivers   : 76
+ Total Blocks           : 20
+ Total Primitive Blocks : 11
+ Total Processes        : 74
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 3285
+
+** Failure:End of simulation
+User(VHDL) Code Called Simulation Stop
+In process TB_FSM_Unit.vhd:stim_proc 
+ 
+
+
+ Total Simulation Time: 0.109375 sec
+
+ Current Memory Usage: 5479.59 Meg
+
+Tue Mar 24 15:33:00 2020
+

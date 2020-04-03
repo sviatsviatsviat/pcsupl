@@ -1,0 +1,34 @@
+Command line:
+   TB_LIFO_UNIT_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62407
+
+Sun Mar 29 16:42:06 2020
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5165.01 Meg
+
+ Total Signals          : 39
+ Total Nets             : 128
+ Total Signal Drivers   : 18
+ Total Blocks           : 7
+ Total Primitive Blocks : 5
+ Total Processes        : 12
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 605
+
+** Failure:End of simulation
+User(VHDL) Code Called Simulation Stop
+In process TB_LIFO_UNIT.vhd:stim_proc 
+ 
+
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 5007.72 Meg
+
+Sun Mar 29 16:58:33 2020
+

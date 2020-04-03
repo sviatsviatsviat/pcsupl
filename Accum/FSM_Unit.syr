@@ -1,0 +1,707 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: FSM_Unit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FSM_Unit.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FSM_Unit"
+Output Format                      : NGC
+Target Device                      : xc7a100t-2-csg324
+
+---- Source Options
+Top Module Name                    : FSM_Unit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\Master Degree\PCSUPL\Accum\AccumMP.vhd" into library work
+Parsing package <AccumMP>.
+Parsing package body <AccumMP>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Accum\ROM_IF.vhd" into library work
+Parsing entity <ROM_IF>.
+Parsing architecture <Behavioral> of entity <rom_if>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Accum\ROM.vhd" into library work
+Parsing entity <ROM>.
+Parsing architecture <Behavioral> of entity <rom>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Accum\RAM_IF.vhd" into library work
+Parsing entity <RAM_IF>.
+Parsing architecture <Behavioral> of entity <ram_if>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Accum\RAM.vhd" into library work
+Parsing entity <RAM>.
+Parsing architecture <Behavioral> of entity <ram>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Accum\ACCUM.vhd" into library work
+Parsing entity <ACCUM>.
+Parsing architecture <Behavioral> of entity <accum>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Accum\ROM_UNIT.vhd" into library work
+Parsing entity <ROM_UNIT>.
+Parsing architecture <Structural> of entity <rom_unit>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Accum\RAM_UNIT.vhd" into library work
+Parsing entity <RAM_UNIT>.
+Parsing architecture <Structural> of entity <ram_unit>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Accum\OB_UNIT.vhd" into library work
+Parsing entity <OB_UNIT>.
+Parsing architecture <Behavioral> of entity <ob_unit>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Accum\ACCUM_UNIT.vhd" into library work
+Parsing entity <ACCUM_UNIT>.
+Parsing architecture <Behavioral> of entity <accum_unit>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Accum\ROM_UNIT_X.vhd" into library work
+Parsing entity <ROM_UNIT_X>.
+Parsing architecture <Structural> of entity <rom_unit_x>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Accum\RAM_UNIT_X.vhd" into library work
+Parsing entity <RAM_UNIT_X>.
+Parsing architecture <Behavioral> of entity <ram_unit_x>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Accum\OB_UNIT_X.vhd" into library work
+Parsing entity <OB_UNIT_X>.
+Parsing architecture <Structural> of entity <ob_unit_x>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Accum\FSM.vhd" into library work
+Parsing entity <FSM>.
+Parsing architecture <Behavioral> of entity <fsm>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Accum\ACCUM_UNIT_X.vhd" into library work
+Parsing entity <ACCUM_UNIT_X>.
+Parsing architecture <Structural> of entity <accum_unit_x>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Accum\FSM_Unit.vhd" into library work
+Parsing entity <FSM_Unit>.
+Parsing architecture <Structural> of entity <fsm_unit>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <FSM_Unit> (architecture <Structural>) from library <work>.
+
+Elaborating entity <FSM> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ROM_UNIT_X> (architecture <Structural>) from library <work>.
+
+Elaborating entity <ROM_UNIT> (architecture <Structural>) from library <work>.
+
+Elaborating entity <ROM> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ROM_IF> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RAM_UNIT_X> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RAM_UNIT> (architecture <Structural>) from library <work>.
+
+Elaborating entity <RAM> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RAM_IF> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ACCUM_UNIT_X> (architecture <Structural>) from library <work>.
+
+Elaborating entity <ACCUM_UNIT> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ACCUM> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "E:\Master Degree\PCSUPL\Accum\ACCUM_UNIT.vhd" Line 59. Case statement is complete. others clause is never selected
+
+Elaborating entity <OB_UNIT_X> (architecture <Structural>) from library <work>.
+
+Elaborating entity <OB_UNIT> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <FSM_Unit>.
+    Related source file is "E:\Master Degree\PCSUPL\Accum\FSM_Unit.vhd".
+    Summary:
+	no macro.
+Unit <FSM_Unit> synthesized.
+
+Synthesizing Unit <FSM>.
+    Related source file is "E:\Master Degree\PCSUPL\Accum\FSM.vhd".
+    Found 5-bit register for signal <state_cur>.
+    Found finite state machine <FSM_0> for signal <state_cur>.
+    -----------------------------------------------------------------------
+    | States             | 25                                             |
+    | Transitions        | 41                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 15                                             |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s_idle                                         |
+    | Power Up State     | s_idle                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16x3-bit Read Only RAM for signal <_n0091>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Finite State Machine(s).
+Unit <FSM> synthesized.
+
+Synthesizing Unit <ROM_UNIT_X>.
+    Related source file is "E:\Master Degree\PCSUPL\Accum\ROM_UNIT_X.vhd".
+    Summary:
+	no macro.
+Unit <ROM_UNIT_X> synthesized.
+
+Synthesizing Unit <ROM_UNIT>.
+    Related source file is "E:\Master Degree\PCSUPL\Accum\ROM_UNIT.vhd".
+    Summary:
+	no macro.
+Unit <ROM_UNIT> synthesized.
+
+Synthesizing Unit <ROM>.
+    Related source file is "E:\Master Degree\PCSUPL\Accum\ROM.vhd".
+    Found 12-bit register for signal <reg_out>.
+    Found 64x12-bit Read Only RAM for signal <rom_data>
+    Summary:
+	inferred   1 RAM(s).
+	inferred  12 D-type flip-flop(s).
+Unit <ROM> synthesized.
+
+Synthesizing Unit <ROM_IF>.
+    Related source file is "E:\Master Degree\PCSUPL\Accum\ROM_IF.vhd".
+    Found 12-bit register for signal <ir>.
+    Found 6-bit register for signal <pc_current>.
+    Found 6-bit adder for signal <pc_current[5]_GND_11_o_add_9_OUT> created at line 82.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <ROM_IF> synthesized.
+
+Synthesizing Unit <RAM_UNIT_X>.
+    Related source file is "E:\Master Degree\PCSUPL\Accum\RAM_UNIT_X.vhd".
+    Summary:
+	no macro.
+Unit <RAM_UNIT_X> synthesized.
+
+Synthesizing Unit <RAM_UNIT>.
+    Related source file is "E:\Master Degree\PCSUPL\Accum\RAM_UNIT.vhd".
+    Summary:
+	no macro.
+Unit <RAM_UNIT> synthesized.
+
+Synthesizing Unit <RAM>.
+    Related source file is "E:\Master Degree\PCSUPL\Accum\RAM.vhd".
+    Found 256x8-bit single-port RAM <Mram_c_ram> for signal <c_ram>.
+    Found 8-bit register for signal <reg_out>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <RAM> synthesized.
+
+Synthesizing Unit <RAM_IF>.
+    Related source file is "E:\Master Degree\PCSUPL\Accum\RAM_IF.vhd".
+    Found 8-bit register for signal <adr_reg>.
+    Found 8-bit register for signal <din_reg>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <RAM_IF> synthesized.
+
+Synthesizing Unit <ACCUM_UNIT_X>.
+    Related source file is "E:\Master Degree\PCSUPL\Accum\ACCUM_UNIT_X.vhd".
+    Summary:
+	no macro.
+Unit <ACCUM_UNIT_X> synthesized.
+
+Synthesizing Unit <ACCUM_UNIT>.
+    Related source file is "E:\Master Degree\PCSUPL\Accum\ACCUM_UNIT.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <ACCUM_UNIT> synthesized.
+
+Synthesizing Unit <ACCUM>.
+    Related source file is "E:\Master Degree\PCSUPL\Accum\ACCUM.vhd".
+    Found 8-bit register for signal <acc_reg>.
+    Found 8-bit adder for signal <acc_reg[7]_GND_19_o_add_2_OUT> created at line 54.
+    Found 8-bit subtractor for signal <GND_19_o_GND_19_o_sub_5_OUT<7:0>> created at line 56.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <ACCUM> synthesized.
+
+Synthesizing Unit <OB_UNIT_X>.
+    Related source file is "E:\Master Degree\PCSUPL\Accum\OB_UNIT_X.vhd".
+    Summary:
+	no macro.
+Unit <OB_UNIT_X> synthesized.
+
+Synthesizing Unit <OB_UNIT>.
+    Related source file is "E:\Master Degree\PCSUPL\Accum\OB_UNIT.vhd".
+    Found 1-bit register for signal <e_res>.
+    Found 1-bit register for signal <l_res>.
+    Found 8-bit comparator greater for signal <l> created at line 50
+    Found 8-bit comparator equal for signal <ACC[7]_RAM[7]_equal_2_o> created at line 53
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <OB_UNIT> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x3-bit single-port Read Only RAM                    : 1
+ 256x8-bit single-port RAM                             : 1
+ 64x12-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 2
+ 6-bit adder                                           : 1
+ 8-bit addsub                                          : 1
+# Registers                                            : 9
+ 1-bit register                                        : 2
+ 12-bit register                                       : 2
+ 6-bit register                                        : 1
+ 8-bit register                                        : 4
+# Comparators                                          : 2
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 4
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <ACCUM>.
+The following registers are absorbed into counter <acc_reg>: 1 register on signal <acc_reg>.
+Unit <ACCUM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <FSM>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0091> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <FSM_ROM_IN_IR<11:8>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <FSM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <RAM>.
+INFO:Xst:3217 - HDL ADVISOR - Register <reg_out> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_c_ram> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <W_EN>          | high     |
+    |     addrA          | connected to signal <ADR>           |          |
+    |     diA            | connected to signal <DIN>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_c_ram> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+Unit <RAM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ROM>.
+INFO:Xst:3217 - HDL ADVISOR - Register <ir> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_rom_data> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 12-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <ADR>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <rom_data>      |          |
+    -----------------------------------------------------------------------
+Unit <ROM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ROM_IF>.
+The following registers are absorbed into counter <pc_current>: 1 register on signal <pc_current>.
+Unit <ROM_IF> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x3-bit single-port distributed Read Only RAM        : 1
+ 256x8-bit single-port distributed RAM                 : 1
+ 64x12-bit single-port distributed Read Only RAM       : 1
+# Counters                                             : 2
+ 6-bit up counter                                      : 1
+ 8-bit updown counter                                  : 1
+# Registers                                            : 50
+ Flip-Flops                                            : 50
+# Comparators                                          : 2
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 7
+ 1-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 3
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <U_FSM/FSM_0> on signal <state_cur[1:25]> with one-hot encoding.
+-----------------------------------------
+ State      | Encoding
+-----------------------------------------
+ s_idle     | 0000000000000000000000001
+ s_read_rom | 0000000000000000000000010
+ s_write_ir | 0000000000000000000000100
+ s_decode   | 0000000000000000000001000
+ s_loadc    | 0000000000000000000010000
+ s_loadv    | 0000000000000000000100000
+ s_store    | 0000000000000000001000000
+ s_wr       | 0000000000000000100000000
+ s_rd       | 0000000000000000010000000
+ s_cmp      | 0000000000000001000000000
+ s_j        | 0000000000000010000000000
+ s_jl       | 0000000000000100000000000
+ s_jle      | 0000000000001000000000000
+ s_inc      | 0000000000010000000000000
+ s_dec      | 0000000000100000000000000
+ s_acc_inc  | 0001000000000000000000000
+ s_acc_dec  | 0010000000000000000000000
+ s_acc_wr   | 0000000100000000000000000
+ s_ob_cmp   | 0100000000000000000000000
+ s_ram_rd   | 0000001000000000000000000
+ s_ram_sa   | 1000000000000000000000000
+ s_ram_wr   | 0000010000000000000000000
+ s_pc_new   | 0000100000000000000000000
+ s_halt     | 0000000001000000000000000
+ s_error    | 0000000010000000000000000
+-----------------------------------------
+
+Optimizing unit <RAM> ...
+
+Optimizing unit <FSM_Unit> ...
+
+Optimizing unit <FSM> ...
+
+Optimizing unit <RAM_IF> ...
+
+Optimizing unit <OB_UNIT> ...
+
+Optimizing unit <ROM> ...
+
+Optimizing unit <ROM_IF> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FSM_Unit, actual ratio is 0.
+FlipFlop U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir_10 has been replicated 1 time(s)
+FlipFlop U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir_11 has been replicated 2 time(s)
+FlipFlop U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir_8 has been replicated 1 time(s)
+FlipFlop U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir_9 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 94
+ Flip-Flops                                            : 94
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : FSM_Unit.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 115
+#      LUT2                        : 2
+#      LUT3                        : 6
+#      LUT4                        : 26
+#      LUT5                        : 20
+#      LUT6                        : 39
+#      MULT_AND                    : 7
+#      MUXCY                       : 7
+#      XORCY                       : 8
+# FlipFlops/Latches                : 94
+#      FDC                         : 24
+#      FDCE                        : 52
+#      FDP                         : 1
+#      FDPE                        : 17
+# RAMS                             : 8
+#      RAM256X1S                   : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 2
+#      OBUF                        : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              94  out of  126800     0%  
+ Number of Slice LUTs:                  125  out of  63400     0%  
+    Number used as Logic:                93  out of  63400     0%  
+    Number used as Memory:               32  out of  19000     0%  
+       Number used as RAM:               32
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    142
+   Number with an unused Flip Flop:      48  out of    142    33%  
+   Number with an unused LUT:            17  out of    142    11%  
+   Number of fully used LUT-FF pairs:    77  out of    142    54%  
+   Number of unique control sets:         9
+
+IO Utilization: 
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    210     2%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 102   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.869ns (Maximum Frequency: 348.505MHz)
+   Minimum input arrival time before clock: 0.878ns
+   Maximum output required time after clock: 0.742ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 2.869ns (frequency: 348.505MHz)
+  Total number of paths / destination ports: 1428 / 243
+-------------------------------------------------------------------------
+Delay:               2.869ns (Levels of Logic = 10)
+  Source:            U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir_11_1 (FF)
+  Destination:       U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/acc_reg_7 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir_11_1 to U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/acc_reg_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             1   0.398   0.649  U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir_11_1 (U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir_11_1)
+     LUT4:I0->O            8   0.105   0.638  bus_acc_MODE<0>_inv1 (bus_acc_MODE<0>_inv)
+     LUT4:I1->O            1   0.105   0.000  U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_lut<0> (U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_lut<0>)
+     MUXCY:S->O            1   0.392   0.000  U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_cy<0> (U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_cy<0>)
+     MUXCY:CI->O           1   0.025   0.000  U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_cy<1> (U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_cy<1>)
+     MUXCY:CI->O           1   0.025   0.000  U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_cy<2> (U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_cy<2>)
+     MUXCY:CI->O           1   0.025   0.000  U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_cy<3> (U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_cy<3>)
+     MUXCY:CI->O           1   0.025   0.000  U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_cy<4> (U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_cy<4>)
+     MUXCY:CI->O           1   0.025   0.000  U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_cy<5> (U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_cy<5>)
+     MUXCY:CI->O           0   0.025   0.000  U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_cy<6> (U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_cy<6>)
+     XORCY:CI->O           1   0.417   0.000  U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg_xor<7> (U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/Mcount_acc_reg8)
+     FDCE:D                    0.015          U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/acc_reg_7
+    ----------------------------------------
+    Total                      2.869ns (1.582ns logic, 1.287ns route)
+                                       (55.1% logic, 44.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 96 / 96
+-------------------------------------------------------------------------
+Offset:              0.878ns (Levels of Logic = 1)
+  Source:            RST (PAD)
+  Destination:       U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/acc_reg_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RST to U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/acc_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            94   0.001   0.480  RST_IBUF (RST_IBUF)
+     FDCE:CLR                  0.397          U_ACCUM_UNIT/U_ACCUM_UNIT/U_ACCUM/acc_reg_0
+    ----------------------------------------
+    Total                      0.878ns (0.398ns logic, 0.480ns route)
+                                       (45.3% logic, 54.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.742ns (Levels of Logic = 1)
+  Source:            U_FSM/state_cur_FSM_FFd10 (FF)
+  Destination:       HALT (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: U_FSM/state_cur_FSM_FFd10 to HALT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.398   0.344  U_FSM/state_cur_FSM_FFd10 (U_FSM/state_cur_FSM_FFd10)
+     OBUF:I->O                 0.000          HALT_OBUF (HALT)
+    ----------------------------------------
+    Total                      0.742ns (0.398ns logic, 0.344ns route)
+                                       (53.6% logic, 46.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    2.869|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.97 secs
+ 
+--> 
+
+Total memory usage is 4699784 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

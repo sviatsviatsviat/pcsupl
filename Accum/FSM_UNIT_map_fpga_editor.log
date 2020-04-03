@@ -1,0 +1,491 @@
+#:C229   
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   E:\Master Degree\PCSUPL\Stack
+#Date/Time:
+#:T   Tue Mar 03 00:09:33 2020
+#------------------------------
+	#Reading FSM_UNIT_map.ncd...
+	#Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "FSM_UNIT" is an NCD, version 3.2, device xc7a100t, package csg324, speed -2
+	#Design creation date: 2020.03.02.21.08.14
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+hilite -c steel_blue
+	#WARNING:FPGAEditor:48 - Nothing to hilite -- there is nothing selected.
+	#4
+select -k comp 'CLK_BUFGP/BUFG'
+	#5
+hilite -c yellow_green
+	#6
+unselect comp 'CLK_BUFGP/BUFG'
+	#7
+select -k comp 'ERROR'
+	#8
+hilite -c yellow_green
+	#9
+hilite -c alice_blue
+	#10
+unselect comp 'ERROR'
+	#11
+select -k comp 'CLK'
+	#12
+select -k comp 'CLK_BUFGP/BUFG'
+	#13
+select -k comp 'ERROR'
+	#14
+select -k comp 'HALT'
+	#15
+select -k comp 'N93'
+	#16
+select -k comp 'RST'
+	#17
+select -k comp 'START'
+	#18
+select -k comp 'U_FSM/state_cur_FSM_FFd4'
+	#19
+select -k comp 'U_FSM/state_cur_FSM_FFd7'
+	#20
+select -k comp 'U_FSM/state_cur_FSM_FFd10'
+	#21
+select -k comp 'U_FSM/state_cur_FSM_FFd11-In2'
+	#22
+select -k comp 'U_FSM/state_cur_FSM_FFd13'
+	#23
+select -k comp 'U_FSM/state_cur_FSM_FFd22'
+	#24
+select -k comp 'U_FSM/state_cur_FSM_FFd27'
+	#25
+select -k comp 'U_FSM/state_cur_FSM_FFd28'
+	#26
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/data_in<4>'
+	#27
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/lifo_enable_in'
+	#28
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/GND_19_o_Decoder_139_OUT<2><2>1'
+	#29
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_state[1]_X_18_o_wide_mux_177_OUT106'
+	#30
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_state[1]_X_18_o_wide_mux_177_OUT1022'
+	#31
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_state[1]_X_18_o_wide_mux_179_OUT102'
+	#32
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_state[1]_X_18_o_wide_mux_181_OUT1031'
+	#33
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_tos2'
+	#34
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_tos3'
+	#35
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_tos4'
+	#36
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_tos5'
+	#37
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_tos8'
+	#38
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_tos_114'
+	#39
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_tos_181'
+	#40
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_tos_1141'
+	#41
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/process_LIFO.pointer<2>'
+	#42
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_flags_full<0>'
+	#43
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_flags_full<1>'
+	#44
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_0<1>'
+	#45
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_0<2>'
+	#46
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_0<4>'
+	#47
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_1<1>'
+	#48
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_1<3>'
+	#49
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_1<5>'
+	#50
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_1<7>'
+	#51
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_2<4>'
+	#52
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_2<7>'
+	#53
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_3<1>'
+	#54
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_3<2>'
+	#55
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_3<5>'
+	#56
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_3<7>'
+	#57
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_4<1>'
+	#58
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_4<4>'
+	#59
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_4<5>'
+	#60
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_4<6>'
+	#61
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_4<7>'
+	#62
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_5<4>'
+	#63
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_5<5>'
+	#64
+select -k comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_5<6>'
+	#65
+select -k comp 'U_OB_UNIT/U_OB_UNIT_X/e_res'
+	#66
+select -k comp 'U_OB_UNIT/U_OB_UNIT_X/l_res'
+	#67
+select -k comp 'U_OB_UNIT/U_OB_UNIT_X/Maddsub_reg_res[7]_inc_res[7]_mux_7_OUT_lut<3>'
+	#68
+select -k comp 'U_OB_UNIT/U_OB_UNIT_X/Mmux_GND_22_o_e_MUX_110_o1'
+	#69
+select -k comp 'U_OB_UNIT/U_OB_UNIT_X/Mmux_GND_22_o_e_MUX_110_o11'
+	#70
+select -k comp 'U_OB_UNIT/U_OB_UNIT_X/reg_res<2>'
+	#71
+select -k comp 'U_OB_UNIT/U_OB_UNIT_X/reg_res<3>'
+	#72
+select -k comp 'U_OB_UNIT/U_OB_UNIT_X/reg_res<5>'
+	#73
+select -k comp 'U_OB_UNIT/U_OB_UNIT_X/reg_res<7>'
+	#74
+select -k comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/reg_out<0>'
+	#75
+select -k comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/reg_out<1>'
+	#76
+select -k comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/reg_out<2>'
+	#77
+select -k comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/reg_out<3>'
+	#78
+select -k comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/reg_out<4>'
+	#79
+select -k comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/reg_out<5>'
+	#80
+select -k comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/reg_out<6>'
+	#81
+select -k comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/reg_out<7>'
+	#82
+select -k comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM_IF/adr_reg<3>'
+	#83
+select -k comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM_IF/adr_reg<6>'
+	#84
+select -k comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM_IF/din_reg<3>'
+	#85
+select -k comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM_IF/din_reg<7>'
+	#86
+select -k comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM/reg_out<10>'
+	#87
+select -k comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM/reg_out<11>'
+	#88
+select -k comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir<3>'
+	#89
+select -k comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir<9>'
+	#90
+select -k comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir<11>'
+	#91
+select -k comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/pc_current<2>'
+	#92
+select -k comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/pc_current<3>'
+	#93
+unselect comp 'CLK'
+	#94
+unselect comp 'CLK_BUFGP/BUFG'
+	#95
+unselect comp 'ERROR'
+	#96
+unselect comp 'HALT'
+	#97
+unselect comp 'N93'
+	#98
+unselect comp 'RST'
+	#99
+unselect comp 'START'
+	#100
+unselect comp 'U_FSM/state_cur_FSM_FFd4'
+	#101
+unselect comp 'U_FSM/state_cur_FSM_FFd7'
+	#102
+unselect comp 'U_FSM/state_cur_FSM_FFd10'
+	#103
+unselect comp 'U_FSM/state_cur_FSM_FFd11-In2'
+	#104
+unselect comp 'U_FSM/state_cur_FSM_FFd13'
+	#105
+unselect comp 'U_FSM/state_cur_FSM_FFd22'
+	#106
+unselect comp 'U_FSM/state_cur_FSM_FFd27'
+	#107
+unselect comp 'U_FSM/state_cur_FSM_FFd28'
+	#108
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/data_in<4>'
+	#109
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/lifo_enable_in'
+	#110
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/GND_19_o_Decoder_139_OUT<2><2>1'
+	#111
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_state[1]_X_18_o_wide_mux_177_OUT106'
+	#112
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_state[1]_X_18_o_wide_mux_177_OUT1022'
+	#113
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_state[1]_X_18_o_wide_mux_179_OUT102'
+	#114
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_state[1]_X_18_o_wide_mux_181_OUT1031'
+	#115
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_tos2'
+	#116
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_tos3'
+	#117
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_tos4'
+	#118
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_tos5'
+	#119
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_tos8'
+	#120
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_tos_114'
+	#121
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_tos_181'
+	#122
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/Mmux_s_lifo_tos_1141'
+	#123
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/process_LIFO.pointer<2>'
+	#124
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_flags_full<0>'
+	#125
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_flags_full<1>'
+	#126
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_0<1>'
+	#127
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_0<2>'
+	#128
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_0<4>'
+	#129
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_1<1>'
+	#130
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_1<3>'
+	#131
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_1<5>'
+	#132
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_1<7>'
+	#133
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_2<4>'
+	#134
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_2<7>'
+	#135
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_3<1>'
+	#136
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_3<2>'
+	#137
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_3<5>'
+	#138
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_3<7>'
+	#139
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_4<1>'
+	#140
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_4<4>'
+	#141
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_4<5>'
+	#142
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_4<6>'
+	#143
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_4<7>'
+	#144
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_5<4>'
+	#145
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_5<5>'
+	#146
+unselect comp 'U_LIFO_UNIT/U_LIFO_UNIT_X/U_LIFO/s_lifo_regs_5<6>'
+	#147
+unselect comp 'U_OB_UNIT/U_OB_UNIT_X/e_res'
+	#148
+unselect comp 'U_OB_UNIT/U_OB_UNIT_X/l_res'
+	#149
+unselect comp 'U_OB_UNIT/U_OB_UNIT_X/Maddsub_reg_res[7]_inc_res[7]_mux_7_OUT_lut<3>'
+	#150
+unselect comp 'U_OB_UNIT/U_OB_UNIT_X/Mmux_GND_22_o_e_MUX_110_o1'
+	#151
+unselect comp 'U_OB_UNIT/U_OB_UNIT_X/Mmux_GND_22_o_e_MUX_110_o11'
+	#152
+unselect comp 'U_OB_UNIT/U_OB_UNIT_X/reg_res<2>'
+	#153
+unselect comp 'U_OB_UNIT/U_OB_UNIT_X/reg_res<3>'
+	#154
+unselect comp 'U_OB_UNIT/U_OB_UNIT_X/reg_res<5>'
+	#155
+unselect comp 'U_OB_UNIT/U_OB_UNIT_X/reg_res<7>'
+	#156
+unselect comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/reg_out<0>'
+	#157
+unselect comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/reg_out<1>'
+	#158
+unselect comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/reg_out<2>'
+	#159
+unselect comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/reg_out<3>'
+	#160
+unselect comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/reg_out<4>'
+	#161
+unselect comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/reg_out<5>'
+	#162
+unselect comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/reg_out<6>'
+	#163
+unselect comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/reg_out<7>'
+	#164
+unselect comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM_IF/adr_reg<3>'
+	#165
+unselect comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM_IF/adr_reg<6>'
+	#166
+unselect comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM_IF/din_reg<3>'
+	#167
+unselect comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM_IF/din_reg<7>'
+	#168
+unselect comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM/reg_out<10>'
+	#169
+unselect comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM/reg_out<11>'
+	#170
+unselect comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir<3>'
+	#171
+unselect comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir<9>'
+	#172
+unselect comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir<11>'
+	#173
+unselect comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/pc_current<2>'
+	#174
+hilite -c tomato
+	#175
+unselect comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/pc_current<3>'
+	#176
+select -k comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/pc_current<2>'
+	#177
+hilite -c tomato
+	#178
+unselect comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/pc_current<2>'
+	#179
+select -k comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir<11>'
+	#180
+hilite -c tomato
+	#181
+unselect comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir<11>'
+	#182
+select -k comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir<9>'
+	#183
+hilite -c tomato
+	#184
+unselect comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir<9>'
+	#185
+select -k comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir<3>'
+	#186
+hilite -c tomato
+	#187
+hilite -c tomato
+	#188
+unselect comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM_IF/ir<3>'
+	#189
+select -k comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM/reg_out<10>'
+	#190
+hilite -c tomato
+	#191
+unselect comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM/reg_out<10>'
+	#192
+select -k comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM/reg_out<11>'
+	#193
+hilite -c tomato
+	#194
+unselect comp 'U_ROM_UNIT/U_ROM_UNIT_X/U_ROM/reg_out<11>'
+	#195
+select -k comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM_IF/din_reg<7>'
+	#196
+hilite -c tomato
+	#197
+unselect comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM_IF/din_reg<7>'
+	#198
+select -k comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM_IF/din_reg<3>'
+	#199
+hilite -c tomato
+	#200
+unselect comp 'U_RAM_UNIT/U_RAM_UNIT_X/U_RAM_IF/din_reg<3>'
+	#201
+select -k comp 'CLK'
+	#202
+hilite -c tomato
+	#203
+unselect comp 'CLK'
+	#204
+select -k comp 'CLK_BUFGP/BUFG'
+	#205
+hilite -c tomato
+	#206
+unselect comp 'CLK_BUFGP/BUFG'
+	#207
+select -k comp 'ERROR'
+	#208
+hilite -c crimson
+	#209
+unselect comp 'ERROR'
+	#210
+select -k comp 'HALT'
+	#211
+hilite -c tomato
+	#212
+unselect comp 'HALT'
+	#213
+select -k comp 'N93'
+	#214
+hilite -c tomato
+	#215
+unselect comp 'N93'
+	#216
+select -k comp 'RST'
+	#217
+hilite -c tomato
+	#218
+unselect comp 'RST'
+	#219
+select -k comp 'START'
+	#220
+hilite -c tomato
+	#221
+unselect comp 'START'
+	#222
+select -k comp 'U_FSM/state_cur_FSM_FFd4'
+	#223
+hilite -c tomato
+	#224
+unselect comp 'U_FSM/state_cur_FSM_FFd4'
+	#225
+select -k comp 'U_FSM/state_cur_FSM_FFd7'
+	#226
+hilite -c tomato
+	#227
+unselect comp 'U_FSM/state_cur_FSM_FFd7'
+	#228
+select -k comp 'U_FSM/state_cur_FSM_FFd10'
+	#229
+hilite -c tomato
+	#230
+unselect comp 'U_FSM/state_cur_FSM_FFd10'
+	#231
+select -k comp 'U_FSM/state_cur_FSM_FFd11-In2'
+	#232
+hilite -c tomato
+	#233
+unselect -all
+	#234
+select site 'TIEOFF_X19Y126'
+	#site "TIEOFF_X19Y126",  type = TIEOFF  (RPM grid X76Y253)
+	#235
+unselect -all
+	#236
+post exit
+	#237
+exit

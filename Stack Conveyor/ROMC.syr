@@ -1,0 +1,389 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: ROMC.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ROMC.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ROMC"
+Output Format                      : NGC
+Target Device                      : xc7a100t-2-csg324
+
+---- Source Options
+Top Module Name                    : ROMC
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\Master Degree\PCSUPL\Stack Conveyor\StackMP.vhd" into library work
+Parsing package <StackMP>.
+Parsing package body <StackMP>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Stack Conveyor\ROMC.vhd" into library work
+Parsing entity <ROMC>.
+INFO:HDLCompiler:1676 - "E:\Master Degree\PCSUPL\Stack Conveyor\ROMC.vhd" Line 36. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+Parsing architecture <Behavioral> of entity <romc>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <ROMC> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ROMC>.
+    Related source file is "E:\Master Degree\PCSUPL\Stack Conveyor\ROMC.vhd".
+    Found 1-bit register for signal <iddle_counter>.
+    Found 12-bit register for signal <IR_OUT>.
+    Found 5-bit register for signal <ROM_ADR>.
+    Found 5-bit adder for signal <ic_w[4]_GND_6_o_add_26_OUT> created at line 51.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <ROMC> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 12-bit register                                       : 1
+ 5-bit register                                        : 1
+# Multiplexers                                         : 2
+ 12-bit 2-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <ROMC>.
+The following registers are absorbed into counter <ic_w>: 1 register on signal <ic_w>.
+Unit <ROMC> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+# Multiplexers                                         : 1
+ 12-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ROMC> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ROMC, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ROMC.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 30
+#      INV                         : 2
+#      LUT2                        : 13
+#      LUT3                        : 3
+#      LUT4                        : 1
+#      LUT5                        : 4
+#      LUT6                        : 7
+# FlipFlops/Latches                : 18
+#      FDCE                        : 5
+#      FDCE_1                      : 1
+#      FDPE_1                      : 12
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 35
+#      IBUF                        : 18
+#      OBUF                        : 17
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              18  out of  126800     0%  
+ Number of Slice LUTs:                   30  out of  63400     0%  
+    Number used as Logic:                30  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     30
+   Number with an unused Flip Flop:      12  out of     30    40%  
+   Number with an unused LUT:             0  out of     30     0%  
+   Number of fully used LUT-FF pairs:    18  out of     30    60%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          35
+ Number of bonded IOBs:                  35  out of    210    16%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+EN                                 | IBUF+BUFG              | 18    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.301ns (Maximum Frequency: 434.650MHz)
+   Minimum input arrival time before clock: 2.790ns
+   Maximum output required time after clock: 0.765ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'EN'
+  Clock period: 2.301ns (frequency: 434.650MHz)
+  Total number of paths / destination ports: 113 / 24
+-------------------------------------------------------------------------
+Delay:               2.301ns (Levels of Logic = 2)
+  Source:            iddle_counter (FF)
+  Destination:       iddle_counter (FF)
+  Source Clock:      EN falling
+  Destination Clock: EN falling
+
+  Data Path: iddle_counter to iddle_counter
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE_1:C->Q           4   0.402   0.810  iddle_counter (iddle_counter)
+     LUT6:I0->O           14   0.105   0.429  conflict (conflict)
+     LUT3:I2->O            1   0.105   0.339  _n0149_inv1 (_n0149_inv)
+     FDCE_1:CE                 0.110          iddle_counter
+    ----------------------------------------
+    Total                      2.301ns (0.722ns logic, 1.579ns route)
+                                       (31.4% logic, 68.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'EN'
+  Total number of paths / destination ports: 198 / 54
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 4)
+  Source:            ROM_DATA<9> (PAD)
+  Destination:       iddle_counter (FF)
+  Destination Clock: EN falling
+
+  Data Path: ROM_DATA<9> to iddle_counter
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.001   0.803  ROM_DATA_9_IBUF (ROM_DATA_9_IBUF)
+     LUT5:I0->O            3   0.105   0.792  conflict_SW0 (N01)
+     LUT6:I1->O           14   0.105   0.429  conflict (conflict)
+     LUT3:I2->O            1   0.105   0.339  _n0149_inv1 (_n0149_inv)
+     FDCE_1:CE                 0.110          iddle_counter
+    ----------------------------------------
+    Total                      2.790ns (0.426ns logic, 2.364ns route)
+                                       (15.3% logic, 84.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'EN'
+  Total number of paths / destination ports: 17 / 17
+-------------------------------------------------------------------------
+Offset:              0.765ns (Levels of Logic = 1)
+  Source:            ic_w_0 (FF)
+  Destination:       ROM_ADR<0> (PAD)
+  Source Clock:      EN falling
+
+  Data Path: ic_w_0 to ROM_ADR<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.398   0.367  ic_w_0 (ic_w_0)
+     OBUF:I->O                 0.000          ROM_ADR_0_OBUF (ROM_ADR<0>)
+    ----------------------------------------
+    Total                      0.765ns (0.398ns logic, 0.367ns route)
+                                       (52.0% logic, 48.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock EN
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+EN             |         |         |    2.301|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.93 secs
+ 
+--> 
+
+Total memory usage is 4699656 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

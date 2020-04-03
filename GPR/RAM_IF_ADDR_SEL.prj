@@ -1,0 +1,2 @@
+vhdl work "GPRMP.vhd"
+vhdl work "RAM_IF_ADDR_SEL.vhd"

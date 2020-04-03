@@ -1,0 +1,3 @@
+vhdl isim_temp "StackMP.vhd"
+vhdl isim_temp "LIFO.vhd"
+vhdl isim_temp "TB_LIFO.vhd"

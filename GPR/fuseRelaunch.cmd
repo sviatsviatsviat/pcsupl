@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/Master Degree/PCSUPL/GPR/TB_FSM_Unit_isim_beh.exe" -prj "E:/Master Degree/PCSUPL/GPR/TB_FSM_Unit_beh.prj" "work.TB_FSM_Unit" 

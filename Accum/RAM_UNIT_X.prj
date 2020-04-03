@@ -1,0 +1,5 @@
+vhdl work "AccumMP.vhd"
+vhdl work "RAM_IF.vhd"
+vhdl work "RAM.vhd"
+vhdl work "RAM_UNIT.vhd"
+vhdl work "RAM_UNIT_X.vhd"

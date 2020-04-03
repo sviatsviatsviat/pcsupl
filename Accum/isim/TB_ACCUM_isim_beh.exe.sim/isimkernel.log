@@ -1,0 +1,34 @@
+Command line:
+   TB_ACCUM_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54358
+
+Mon Mar 30 21:34:24 2020
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5164.99 Meg
+
+ Total Signals          : 13
+ Total Nets             : 29
+ Total Signal Drivers   : 7
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 4
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 524
+
+** Failure:End of simulation
+User(VHDL) Code Called Simulation Stop
+In process TB_ACCUM.vhd:stim_proc 
+ 
+
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 5007.7 Meg
+
+Mon Mar 30 21:46:47 2020
+

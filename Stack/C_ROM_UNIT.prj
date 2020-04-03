@@ -1,0 +1,4 @@
+vhdl work "StackMP.vhd"
+vhdl work "ROMC.vhd"
+vhdl work "ROM.vhd"
+vhdl work "C_ROM_UNIT.vhd"

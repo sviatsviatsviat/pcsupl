@@ -1,0 +1,50 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o E:/Master Degree/PCSUPL/Stack/TB_FSM_Unit_isim_beh.exe -prj E:/Master Degree/PCSUPL/Stack/TB_FSM_Unit_beh.prj work.TB_FSM_Unit 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/StackMP.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/ROM_IF.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/ROM.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/RAM_IF.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/RAM.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/LIFO.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/ROM_UNIT.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/RAM_UNIT.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/OB_UNIT.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/LIFO_UNIT.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/ROM_UNIT_X.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/RAM_UNIT_X.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/OB_UNIT_X.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/LIFO_UNIT_X.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/FSM.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/FSM_Unit.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Stack/TB_FSM_Unit.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package stackmp
+Compiling architecture behavioral of entity FSM [fsm_default]
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity ROM [rom_default]
+Compiling architecture behavioral of entity ROM_IF [rom_if_default]
+Compiling architecture structural of entity ROM_UNIT [rom_unit_default]
+Compiling architecture structural of entity ROM_UNIT_X [rom_unit_x_default]
+Compiling architecture behavioral of entity RAM [ram_default]
+Compiling architecture behavioral of entity RAM_IF [ram_if_default]
+Compiling architecture structural of entity RAM_UNIT [ram_unit_default]
+Compiling architecture behavioral of entity RAM_UNIT_X [ram_unit_x_default]
+Compiling architecture behavioral of entity LIFO [\LIFO(6)\]
+Compiling architecture mixed of entity LIFO_UNIT [\LIFO_UNIT(6)\]
+Compiling architecture structural of entity LIFO_UNIT_X [lifo_unit_x_default]
+Compiling architecture behavioral of entity OB_UNIT [ob_unit_default]
+Compiling architecture structural of entity OB_UNIT_X [ob_unit_x_default]
+Compiling architecture structural of entity FSM_Unit [fsm_unit_default]
+Compiling architecture behavior of entity tb_fsm_unit
+Time Resolution for simulation is 1ps.
+Compiled 36 VHDL Units
+Built simulation executable E:/Master Degree/PCSUPL/Stack/TB_FSM_Unit_isim_beh.exe
+Fuse Memory Usage: 35372 KB
+Fuse CPU Usage: 437 ms

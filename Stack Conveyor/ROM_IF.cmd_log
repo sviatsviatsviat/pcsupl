@@ -1,0 +1,7 @@
+vhdtdtfi -lib work StackMP.vhd -lib work ROM_IF.vhd -prj Stack -o ROM_IF.spl -module ROM_IF -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 ROM_IF.spl {E:/Master Degree/PCSUPL/Stack/ROM_IF.sym} 
+vhdtdtfi -lib work StackMP.vhd -lib work ROM_IF.vhd -prj Stack -o ROM_IF.spl -module ROM_IF -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 ROM_IF.spl {E:/Master Degree/PCSUPL/Stack/ROM_IF.sym} 
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/ROM_IF.xst" -ofn "E:/Master Degree/PCSUPL/Stack/ROM_IF.syr" 
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/ROM_IF.xst" -ofn "E:/Master Degree/PCSUPL/Stack/ROM_IF.syr" 
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/ROM_IF.xst" -ofn "E:/Master Degree/PCSUPL/Stack/ROM_IF.syr" 

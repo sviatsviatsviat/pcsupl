@@ -1,0 +1,17 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   E:\Master Degree\PCSUPL\Stack
+#Date/Time:
+#:T   Tue Mar 03 22:08:51 2020
+#------------------------------
+	#Reading FSM_Unit.ncd...
+	#Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "FSM_Unit" is an NCD, version 3.2, device xc7a100t, package csg324, speed -2
+	#Design creation date: 2020.03.03.19.08.14
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes

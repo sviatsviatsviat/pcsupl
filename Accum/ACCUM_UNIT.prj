@@ -1,0 +1,3 @@
+vhdl work "AccumMP.vhd"
+vhdl work "ACCUM.vhd"
+vhdl work "ACCUM_UNIT.vhd"

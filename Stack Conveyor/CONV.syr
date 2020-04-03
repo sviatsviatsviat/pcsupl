@@ -1,0 +1,904 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: CONV.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CONV.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CONV"
+Output Format                      : NGC
+Target Device                      : xc7a100t-2-csg324
+
+---- Source Options
+Top Module Name                    : CONV
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\Master Degree\PCSUPL\Stack Conveyor\StackMP.vhd" into library work
+Parsing package <StackMP>.
+Parsing package body <StackMP>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Stack Conveyor\CONV.vhd" into library work
+Parsing entity <CONV>.
+Parsing architecture <Behavioral> of entity <conv>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <CONV> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <CONV>.
+    Related source file is "E:\Master Degree\PCSUPL\Stack Conveyor\CONV.vhd".
+    Found 4-bit register for signal <RO_RE>.
+    Found 4-bit register for signal <RO_WL>.
+    Found 4-bit register for signal <RO_RL>.
+    Found 4-bit register for signal <OB_OUT_OPCODE>.
+    Found 8-bit register for signal <RA_WE>.
+    Found 8-bit register for signal <RA_RE>.
+    Found 8-bit register for signal <RA_WL>.
+    Found 12-bit register for signal <RI_R>.
+    Found 4-bit register for signal <JC>.
+    Found 16x3-bit Read Only RAM for signal <_n0235>
+    Found 1-bit tristate buffer for signal <RAM_OUT_DIN<7>> created at line 168
+    Found 1-bit tristate buffer for signal <RAM_OUT_DIN<6>> created at line 168
+    Found 1-bit tristate buffer for signal <RAM_OUT_DIN<5>> created at line 168
+    Found 1-bit tristate buffer for signal <RAM_OUT_DIN<4>> created at line 168
+    Found 1-bit tristate buffer for signal <RAM_OUT_DIN<3>> created at line 168
+    Found 1-bit tristate buffer for signal <RAM_OUT_DIN<2>> created at line 168
+    Found 1-bit tristate buffer for signal <RAM_OUT_DIN<1>> created at line 168
+    Found 1-bit tristate buffer for signal <RAM_OUT_DIN<0>> created at line 168
+    Found 1-bit tristate buffer for signal <RAM_OUT_ADR<7>> created at line 168
+    Found 1-bit tristate buffer for signal <RAM_OUT_ADR<6>> created at line 168
+    Found 1-bit tristate buffer for signal <RAM_OUT_ADR<5>> created at line 168
+    Found 1-bit tristate buffer for signal <RAM_OUT_ADR<4>> created at line 168
+    Found 1-bit tristate buffer for signal <RAM_OUT_ADR<3>> created at line 168
+    Found 1-bit tristate buffer for signal <RAM_OUT_ADR<2>> created at line 168
+    Found 1-bit tristate buffer for signal <RAM_OUT_ADR<1>> created at line 168
+    Found 1-bit tristate buffer for signal <RAM_OUT_ADR<0>> created at line 168
+WARNING:Xst:737 - Found 1-bit latch for signal <PUSH_DATA<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PUSH_DATA<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PUSH_DATA<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PUSH_DATA<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PUSH_DATA<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PUSH_DATA<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PUSH_DATA<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PUSH_DATA<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ROM_OUT_L>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ROM_OUT_E>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <GO>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ROM_OUT_STP>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <HALT>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ERROR>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  56 D-type flip-flop(s).
+	inferred  14 Latch(s).
+	inferred  42 Multiplexer(s).
+	inferred  16 Tristate(s).
+Unit <CONV> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x3-bit single-port Read Only RAM                    : 1
+# Registers                                            : 9
+ 12-bit register                                       : 1
+ 4-bit register                                        : 5
+ 8-bit register                                        : 3
+# Latches                                              : 14
+ 1-bit latch                                           : 14
+# Multiplexers                                         : 42
+ 1-bit 2-to-1 multiplexer                              : 42
+# Tristates                                            : 16
+ 1-bit tristate buffer                                 : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <CONV>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0235> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <RO_WL>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <LIFO_OUT_MODE> |          |
+    -----------------------------------------------------------------------
+Unit <CONV> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x3-bit single-port distributed Read Only RAM        : 1
+# Registers                                            : 56
+ Flip-Flops                                            : 56
+# Multiplexers                                         : 42
+ 1-bit 2-to-1 multiplexer                              : 42
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    GO in unit <CONV>
+    HALT in unit <CONV>
+    ROM_OUT_STP in unit <CONV>
+    ERROR in unit <CONV>
+
+
+Optimizing unit <CONV> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CONV, actual ratio is 0.
+Latch ROM_OUT_STP has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 56
+ Flip-Flops                                            : 56
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : CONV.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 56
+#      INV                         : 2
+#      LUT2                        : 5
+#      LUT3                        : 9
+#      LUT4                        : 9
+#      LUT5                        : 12
+#      LUT6                        : 19
+# FlipFlops/Latches                : 71
+#      FDC                         : 12
+#      FDCE                        : 4
+#      FDP                         : 16
+#      FDP_1                       : 24
+#      LD                          : 15
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 116
+#      IBUF                        : 51
+#      OBUF                        : 49
+#      OBUFT                       : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              58  out of  126800     0%  
+ Number of Slice LUTs:                   56  out of  63400     0%  
+    Number used as Logic:                56  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     73
+   Number with an unused Flip Flop:      15  out of     73    20%  
+   Number with an unused LUT:            17  out of     73    23%  
+   Number of fully used LUT-FF pairs:    41  out of     73    56%  
+   Number of unique control sets:        10
+
+IO Utilization: 
+ Number of IOs:                         116
+ Number of bonded IOBs:                 116  out of    210    55%  
+    IOB Flip Flops/Latches:              13
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------+------------------------+-------+
+Clock Signal                                             | Clock buffer(FF name)  | Load  |
+---------------------------------------------------------+------------------------+-------+
+D_EN(D_EN1:O)                                            | BUFG(*)(RI_R_0)        | 24    |
+CLK                                                      | IBUF+BUFG              | 4     |
+RO_WL[3]_RO_WL[3]_AND_22_o(RO_WL[3]_RO_WL[3]_AND_22_o1:O)| NONE(*)(ROM_OUT_L)     | 2     |
+OB_OUT_CLK_OBUF(RAM_OUT_CLK1:O)                          | BUFG(*)(RO_RE_0)       | 24    |
+LIFO_OUT_CLK_OBUF(LIFO_OUT_CLK1:O)                       | NONE(*)(RO_RL_0)       | 4     |
+RO_WL[3]_RO_WL[3]_OR_53_o(RO_WL[3]_RO_WL[3]_OR_53_o1:O)  | NONE(*)(PUSH_DATA_7)   | 8     |
+ERROR_G(ERROR_G:O)                                       | NONE(*)(ERROR)         | 1     |
+ROM_OUT_STP_G(ROM_OUT_STP_G:O)                           | NONE(*)(ROM_OUT_STP)   | 2     |
+HALT_G(HALT_G:O)                                         | NONE(*)(HALT)          | 1     |
+GO_G(GO_G:O)                                             | NONE(*)(GO)            | 1     |
+---------------------------------------------------------+------------------------+-------+
+(*) These 9 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 1.635ns (Maximum Frequency: 611.509MHz)
+   Minimum input arrival time before clock: 1.740ns
+   Maximum output required time after clock: 1.909ns
+   Maximum combinational path delay: 1.250ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 1.635ns (frequency: 611.509MHz)
+  Total number of paths / destination ports: 20 / 8
+-------------------------------------------------------------------------
+Delay:               1.635ns (Levels of Logic = 1)
+  Source:            JC_3 (FF)
+  Destination:       JC_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: JC_3 to JC_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.398   0.666  JC_3 (JC_3)
+     LUT6:I2->O            4   0.105   0.356  _n0218_inv1 (_n0218_inv)
+     FDCE:CE                   0.110          JC_0
+    ----------------------------------------
+    Total                      1.635ns (0.613ns logic, 1.022ns route)
+                                       (37.5% logic, 62.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'D_EN'
+  Clock period: 1.515ns (frequency: 660.284MHz)
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Delay:               0.757ns (Levels of Logic = 0)
+  Source:            RI_R_8 (FF)
+  Destination:       RO_WE_0 (FF)
+  Source Clock:      D_EN rising
+  Destination Clock: D_EN falling
+
+  Data Path: RI_R_8 to RO_WE_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.398   0.344  RI_R_8 (RI_R_8)
+     FDP_1:D                   0.015          RO_WE_0
+    ----------------------------------------
+    Total                      0.757ns (0.413ns logic, 0.344ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'OB_OUT_CLK_OBUF'
+  Clock period: 1.515ns (frequency: 660.284MHz)
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Delay:               0.757ns (Levels of Logic = 0)
+  Source:            RO_RE_0 (FF)
+  Destination:       RO_WL_0 (FF)
+  Source Clock:      OB_OUT_CLK_OBUF rising
+  Destination Clock: OB_OUT_CLK_OBUF falling
+
+  Data Path: RO_RE_0 to RO_WL_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              2   0.398   0.344  RO_RE_0 (RO_RE_0)
+     FDP_1:D                   0.015          RO_WL_0
+    ----------------------------------------
+    Total                      0.757ns (0.413ns logic, 0.344ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'D_EN'
+  Total number of paths / destination ports: 36 / 36
+-------------------------------------------------------------------------
+Offset:              0.874ns (Levels of Logic = 1)
+  Source:            RST (PAD)
+  Destination:       RI_R_0 (FF)
+  Destination Clock: D_EN rising
+
+  Data Path: RST to RI_R_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            69   0.001   0.476  RST_IBUF (OB_OUT_RST_OBUF)
+     FDC:CLR                   0.397          RI_R_0
+    ----------------------------------------
+    Total                      0.874ns (0.398ns logic, 0.476ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              0.874ns (Levels of Logic = 1)
+  Source:            RST (PAD)
+  Destination:       JC_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RST to JC_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            69   0.001   0.476  RST_IBUF (OB_OUT_RST_OBUF)
+     FDCE:CLR                  0.397          JC_0
+    ----------------------------------------
+    Total                      0.874ns (0.398ns logic, 0.476ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'RO_WL[3]_RO_WL[3]_AND_22_o'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.340ns (Levels of Logic = 1)
+  Source:            OB_IN_L_FLAG (PAD)
+  Destination:       ROM_OUT_L (LATCH)
+  Destination Clock: RO_WL[3]_RO_WL[3]_AND_22_o falling
+
+  Data Path: OB_IN_L_FLAG to ROM_OUT_L
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.339  OB_IN_L_FLAG_IBUF (OB_IN_L_FLAG_IBUF)
+     LD:D                     -0.015          ROM_OUT_L
+    ----------------------------------------
+    Total                      0.340ns (0.001ns logic, 0.339ns route)
+                                       (0.3% logic, 99.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'OB_OUT_CLK_OBUF'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              0.874ns (Levels of Logic = 1)
+  Source:            RST (PAD)
+  Destination:       RO_RE_0 (FF)
+  Destination Clock: OB_OUT_CLK_OBUF rising
+
+  Data Path: RST to RO_RE_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            69   0.001   0.476  RST_IBUF (OB_OUT_RST_OBUF)
+     FDP:PRE                   0.397          RO_RE_0
+    ----------------------------------------
+    Total                      0.874ns (0.398ns logic, 0.476ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'LIFO_OUT_CLK_OBUF'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              0.874ns (Levels of Logic = 1)
+  Source:            RST (PAD)
+  Destination:       RO_RL_0 (FF)
+  Destination Clock: LIFO_OUT_CLK_OBUF rising
+
+  Data Path: RST to RO_RL_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            69   0.001   0.476  RST_IBUF (OB_OUT_RST_OBUF)
+     FDP:PRE                   0.397          RO_RL_0
+    ----------------------------------------
+    Total                      0.874ns (0.398ns logic, 0.476ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'RO_WL[3]_RO_WL[3]_OR_53_o'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              0.899ns (Levels of Logic = 2)
+  Source:            RAM_IN_RAM_DATA<7> (PAD)
+  Destination:       PUSH_DATA_7 (LATCH)
+  Destination Clock: RO_WL[3]_RO_WL[3]_OR_53_o falling
+
+  Data Path: RAM_IN_RAM_DATA<7> to PUSH_DATA_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.793  RAM_IN_RAM_DATA_7_IBUF (RAM_IN_RAM_DATA_7_IBUF)
+     LUT6:I0->O            1   0.105   0.000  Mmux_PUSH_DATA[7]_RAM_IN_RAM_DATA[7]_MUX_94_o11 (PUSH_DATA[7]_RAM_IN_RAM_DATA[7]_MUX_94_o)
+     LD:D                     -0.015          PUSH_DATA_7
+    ----------------------------------------
+    Total                      0.899ns (0.106ns logic, 0.793ns route)
+                                       (11.8% logic, 88.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ERROR_G'
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Offset:              0.842ns (Levels of Logic = 2)
+  Source:            RST (PAD)
+  Destination:       ERROR (LATCH)
+  Destination Clock: ERROR_G falling
+
+  Data Path: RST to ERROR
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            69   0.001   0.736  RST_IBUF (OB_OUT_RST_OBUF)
+     LUT3:I0->O            1   0.105   0.000  ERROR_D (ERROR_D)
+     LD:D                     -0.015          ERROR
+    ----------------------------------------
+    Total                      0.842ns (0.106ns logic, 0.736ns route)
+                                       (12.6% logic, 87.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ROM_OUT_STP_G'
+  Total number of paths / destination ports: 10 / 2
+-------------------------------------------------------------------------
+Offset:              1.023ns (Levels of Logic = 2)
+  Source:            RST (PAD)
+  Destination:       ROM_OUT_STP (LATCH)
+  Destination Clock: ROM_OUT_STP_G falling
+
+  Data Path: RST to ROM_OUT_STP
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            69   0.001   0.917  RST_IBUF (OB_OUT_RST_OBUF)
+     LUT5:I0->O            2   0.105   0.000  ROM_OUT_STP_D (ROM_OUT_STP_D)
+     LD:D                     -0.015          ROM_OUT_STP
+    ----------------------------------------
+    Total                      1.023ns (0.106ns logic, 0.917ns route)
+                                       (10.4% logic, 89.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'HALT_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.023ns (Levels of Logic = 2)
+  Source:            RST (PAD)
+  Destination:       HALT (LATCH)
+  Destination Clock: HALT_G falling
+
+  Data Path: RST to HALT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            69   0.001   0.917  RST_IBUF (OB_OUT_RST_OBUF)
+     LUT5:I0->O            1   0.105   0.000  HALT_D (HALT_D)
+     LD:D                     -0.015          HALT
+    ----------------------------------------
+    Total                      1.023ns (0.106ns logic, 0.917ns route)
+                                       (10.4% logic, 89.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'GO_G'
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Offset:              1.740ns (Levels of Logic = 4)
+  Source:            START (PAD)
+  Destination:       GO (LATCH)
+  Destination Clock: GO_G falling
+
+  Data Path: START to GO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.001   0.369  START_IBUF (START_IBUF)
+     LUT2:I1->O            1   0.105   0.451  RST_GND_6_o_AND_28_o_SW0 (N01)
+     LUT6:I4->O            2   0.105   0.604  RST_GND_6_o_AND_28_o (RST_GND_6_o_AND_28_o)
+     LUT3:I0->O            1   0.105   0.000  GO_D (GO_D)
+     LD:D                     -0.015          GO
+    ----------------------------------------
+    Total                      1.740ns (0.316ns logic, 1.424ns route)
+                                       (18.2% logic, 81.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'D_EN'
+  Total number of paths / destination ports: 147 / 24
+-------------------------------------------------------------------------
+Offset:              1.909ns (Levels of Logic = 3)
+  Source:            RI_R_8 (FF)
+  Destination:       ROM_OUT_CJ_EN (PAD)
+  Source Clock:      D_EN rising
+
+  Data Path: RI_R_8 to ROM_OUT_CJ_EN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.398   0.604  RI_R_8 (RI_R_8)
+     LUT3:I0->O            1   0.105   0.357  ROM_OUT_CJ_EN_SW0 (N2)
+     LUT6:I5->O            1   0.105   0.339  ROM_OUT_CJ_EN (ROM_OUT_CJ_EN_OBUF)
+     OBUF:I->O                 0.000          ROM_OUT_CJ_EN_OBUF (ROM_OUT_CJ_EN)
+    ----------------------------------------
+    Total                      1.909ns (0.608ns logic, 1.301ns route)
+                                       (31.9% logic, 68.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'OB_OUT_CLK_OBUF'
+  Total number of paths / destination ports: 15 / 4
+-------------------------------------------------------------------------
+Offset:              1.627ns (Levels of Logic = 2)
+  Source:            RO_RE_0 (FF)
+  Destination:       ROM_OUT_CJ_EN (PAD)
+  Source Clock:      OB_OUT_CLK_OBUF rising
+
+  Data Path: RO_RE_0 to ROM_OUT_CJ_EN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              2   0.398   0.785  RO_RE_0 (RO_RE_0)
+     LUT6:I1->O            1   0.105   0.339  ROM_OUT_CJ_EN (ROM_OUT_CJ_EN_OBUF)
+     OBUF:I->O                 0.000          ROM_OUT_CJ_EN_OBUF (ROM_OUT_CJ_EN)
+    ----------------------------------------
+    Total                      1.627ns (0.503ns logic, 1.124ns route)
+                                       (30.9% logic, 69.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'RO_WL[3]_RO_WL[3]_OR_53_o'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              0.860ns (Levels of Logic = 1)
+  Source:            PUSH_DATA_7 (LATCH)
+  Destination:       LIFO_OUT_PUSHDATA<7> (PAD)
+  Source Clock:      RO_WL[3]_RO_WL[3]_OR_53_o falling
+
+  Data Path: PUSH_DATA_7 to LIFO_OUT_PUSHDATA<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.521   0.339  PUSH_DATA_7 (PUSH_DATA_7)
+     OBUF:I->O                 0.000          LIFO_OUT_PUSHDATA_7_OBUF (LIFO_OUT_PUSHDATA<7>)
+    ----------------------------------------
+    Total                      0.860ns (0.521ns logic, 0.339ns route)
+                                       (60.6% logic, 39.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'HALT_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.860ns (Levels of Logic = 1)
+  Source:            HALT (LATCH)
+  Destination:       HALT (PAD)
+  Source Clock:      HALT_G falling
+
+  Data Path: HALT to HALT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.521   0.339  HALT (HALT_OBUF)
+     OBUF:I->O                 0.000          HALT_OBUF (HALT)
+    ----------------------------------------
+    Total                      0.860ns (0.521ns logic, 0.339ns route)
+                                       (60.6% logic, 39.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ERROR_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.860ns (Levels of Logic = 1)
+  Source:            ERROR (LATCH)
+  Destination:       ERROR (PAD)
+  Source Clock:      ERROR_G falling
+
+  Data Path: ERROR to ERROR
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.521   0.339  ERROR (ERROR_OBUF)
+     OBUF:I->O                 0.000          ERROR_OBUF (ERROR)
+    ----------------------------------------
+    Total                      0.860ns (0.521ns logic, 0.339ns route)
+                                       (60.6% logic, 39.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              1.239ns (Levels of Logic = 2)
+  Source:            JC_3 (FF)
+  Destination:       LIFO_OUT_CLK (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: JC_3 to LIFO_OUT_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.398   0.374  JC_3 (JC_3)
+     LUT2:I1->O            5   0.105   0.362  LIFO_OUT_CLK1 (LIFO_OUT_CLK_OBUF)
+     OBUF:I->O                 0.000          LIFO_OUT_CLK_OBUF (LIFO_OUT_CLK)
+    ----------------------------------------
+    Total                      1.239ns (0.503ns logic, 0.736ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ROM_OUT_STP_G'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.334ns (Levels of Logic = 2)
+  Source:            ROM_OUT_STP (LATCH)
+  Destination:       ROM_OUT_ROM_EN (PAD)
+  Source Clock:      ROM_OUT_STP_G falling
+
+  Data Path: ROM_OUT_STP to ROM_OUT_ROM_EN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               3   0.521   0.351  ROM_OUT_STP (ROM_OUT_STP_OBUF)
+     INV:I->O              1   0.123   0.339  ROM_OUT_ROM_EN1_INV_0 (ROM_OUT_ROM_EN_OBUF)
+     OBUF:I->O                 0.000          ROM_OUT_ROM_EN_OBUF (ROM_OUT_ROM_EN)
+    ----------------------------------------
+    Total                      1.334ns (0.644ns logic, 0.690ns route)
+                                       (48.3% logic, 51.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'RO_WL[3]_RO_WL[3]_AND_22_o'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.860ns (Levels of Logic = 1)
+  Source:            ROM_OUT_L (LATCH)
+  Destination:       ROM_OUT_L (PAD)
+  Source Clock:      RO_WL[3]_RO_WL[3]_AND_22_o falling
+
+  Data Path: ROM_OUT_L to ROM_OUT_L
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.521   0.339  ROM_OUT_L (ROM_OUT_L_OBUF)
+     OBUF:I->O                 0.000          ROM_OUT_L_OBUF (ROM_OUT_L)
+    ----------------------------------------
+    Total                      0.860ns (0.521ns logic, 0.339ns route)
+                                       (60.6% logic, 39.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 48 / 40
+-------------------------------------------------------------------------
+Delay:               1.250ns (Levels of Logic = 3)
+  Source:            LIFO_IN_TOS<7> (PAD)
+  Destination:       RAM_OUT_DIN<7> (PAD)
+
+  Data Path: LIFO_IN_TOS<7> to RAM_OUT_DIN<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.001   0.805  LIFO_IN_TOS_7_IBUF (OB_OUT_ARG_1_7_OBUF)
+     LUT6:I0->O            1   0.105   0.339  Mmux_Z_6_o_TOS_1[7]_MUX_29_o11 (RAM_OUT_DIN_7_OBUFT)
+     OBUFT:I->O                0.000          RAM_OUT_DIN_7_OBUFT (RAM_OUT_DIN<7>)
+    ----------------------------------------
+    Total                      1.250ns (0.106ns logic, 1.144ns route)
+                                       (8.5% logic, 91.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    1.635|         |         |         |
+GO_G           |         |    1.872|         |         |
+ROM_OUT_STP_G  |         |    1.897|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock D_EN
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+D_EN           |         |         |    0.757|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock GO_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    2.237|         |
+ROM_OUT_STP_G  |         |         |    2.140|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock HALT_G
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+LIFO_OUT_CLK_OBUF|         |         |    1.157|         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock LIFO_OUT_CLK_OBUF
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+OB_OUT_CLK_OBUF|         |    0.801|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock OB_OUT_CLK_OBUF
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+D_EN           |         |    0.875|         |         |
+OB_OUT_CLK_OBUF|         |         |    0.757|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock RO_WL[3]_RO_WL[3]_OR_53_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+OB_OUT_CLK_OBUF|         |         |    2.075|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.62 secs
+ 
+--> 
+
+Total memory usage is 4699976 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

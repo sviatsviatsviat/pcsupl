@@ -1,0 +1,33 @@
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.xst" -ofn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-2 "FSM_UNIT.ngc" FSM_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FSM_UNIT_map.ncd FSM_UNIT.ngd FSM_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off FSM_UNIT_map.ncd FSM_UNIT.ncd FSM_UNIT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml FSM_UNIT.twx FSM_UNIT.ncd -o FSM_UNIT.twr FSM_UNIT.pcf 
+bitgen -intstyle ise -f FSM_UNIT.ut FSM_UNIT.ncd 
+netgen -intstyle ise -ar Structure -tm FSM_UNIT -w -dir netgen/synthesis -ofmt vhdl -sim FSM_UNIT.ngc FSM_UNIT_synthesis.vhd 
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.xst" -ofn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.syr" 
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.xst" -ofn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.syr" 
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.xst" -ofn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.syr" 
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.xst" -ofn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-2 "FSM_UNIT.ngc" FSM_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FSM_UNIT_map.ncd FSM_UNIT.ngd FSM_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off FSM_UNIT_map.ncd FSM_UNIT.ncd FSM_UNIT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml FSM_UNIT.twx FSM_UNIT.ncd -o FSM_UNIT.twr FSM_UNIT.pcf 
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.xst" -ofn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.syr" 
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.xst" -ofn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.syr" 
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.xst" -ofn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.syr" 
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.xst" -ofn "E:/Master Degree/PCSUPL/Stack/FSM_UNIT.syr" 
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/FSM_Unit.xst" -ofn "E:/Master Degree/PCSUPL/Stack/FSM_Unit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-2 "FSM_Unit.ngc" FSM_Unit.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FSM_Unit_map.ncd FSM_Unit.ngd FSM_Unit.pcf 
+par -w -intstyle ise -ol high -mt off FSM_Unit_map.ncd FSM_Unit.ncd FSM_Unit.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml FSM_Unit.twx FSM_Unit.ncd -o FSM_Unit.twr FSM_Unit.pcf 
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/FSM_Unit.xst" -ofn "E:/Master Degree/PCSUPL/Stack/FSM_Unit.syr" 
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/FSM_Unit.xst" -ofn "E:/Master Degree/PCSUPL/Stack/FSM_Unit.syr" 
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/FSM_Unit.xst" -ofn "E:/Master Degree/PCSUPL/Stack/FSM_Unit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-2 "FSM_Unit.ngc" FSM_Unit.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FSM_Unit_map.ncd FSM_Unit.ngd FSM_Unit.pcf 
+par -w -intstyle ise -ol high -mt off FSM_Unit_map.ncd FSM_Unit.ncd FSM_Unit.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml FSM_Unit.twx FSM_Unit.ncd -o FSM_Unit.twr FSM_Unit.pcf 
+bitgen -intstyle ise -f FSM_Unit.ut FSM_Unit.ncd 
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/pcsupl/Stack/FSM_Unit.xst" -ofn "E:/Master Degree/PCSUPL/pcsupl/Stack/FSM_Unit.syr" 

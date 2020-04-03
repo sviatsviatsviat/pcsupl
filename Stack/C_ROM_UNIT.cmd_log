@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/Stack/C_ROM_UNIT.xst" -ofn "E:/Master Degree/PCSUPL/Stack/C_ROM_UNIT.syr" 

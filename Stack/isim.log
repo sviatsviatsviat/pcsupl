@@ -1,0 +1,48 @@
+ISim log file
+Running: E:\Master Degree\PCSUPL\Stack\TB_FSM_Unit_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/Master Degree/PCSUPL/Stack/TB_FSM_Unit_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 10000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_fsm_unit/uut/U_ROM_UNIT/U_ROM_UNIT_X/U_ROM/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /tb_fsm_unit/uut/U_ROM_UNIT/U_ROM_UNIT_X/U_ROM/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /tb_fsm_unit/uut/U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+
+** Failure:End of simulation
+User(VHDL) Code Called Simulation Stop
+In process TB_FSM_Unit.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.
+# restart
+# restart
+# restart
+# run all
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_fsm_unit/uut/U_ROM_UNIT/U_ROM_UNIT_X/U_ROM/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /tb_fsm_unit/uut/U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+
+** Failure:End of simulation
+User(VHDL) Code Called Simulation Stop
+In process TB_FSM_Unit.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.
+# restart
+# restart
+# restart
+# restart
+# run all
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_fsm_unit/uut/U_ROM_UNIT/U_ROM_UNIT_X/U_ROM/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /tb_fsm_unit/uut/U_RAM_UNIT/U_RAM_UNIT_X/U_RAM/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+
+** Failure:End of simulation
+User(VHDL) Code Called Simulation Stop
+In process TB_FSM_Unit.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.

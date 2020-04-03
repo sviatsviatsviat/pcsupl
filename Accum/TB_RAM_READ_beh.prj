@@ -1,0 +1,3 @@
+vhdl work "StackMP.vhd"
+vhdl work "RAM.vhd"
+vhdl work "TB_RAM.vhd"

@@ -1,0 +1,21 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o E:/Master Degree/PCSUPL/Accelerator/TB_SORTER_isim_beh.exe -prj E:/Master Degree/PCSUPL/Accelerator/TB_SORTER_beh.prj work.TB_SORTER 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Parsing VHDL file "E:/Master Degree/PCSUPL/Accelerator/CMP_UNIT.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Accelerator/Sorter.vhd" into library work
+Parsing VHDL file "E:/Master Degree/PCSUPL/Accelerator/TB_SORTER.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity CMP_UNIT [cmp_unit_default]
+Compiling architecture behavioral of entity Sorter [sorter_default]
+Compiling architecture behavior of entity tb_sorter
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 7 VHDL Units
+Built simulation executable E:/Master Degree/PCSUPL/Accelerator/TB_SORTER_isim_beh.exe
+Fuse Memory Usage: 30788 KB
+Fuse CPU Usage: 202 ms

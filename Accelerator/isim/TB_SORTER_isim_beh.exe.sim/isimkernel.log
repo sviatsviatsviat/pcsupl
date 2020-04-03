@@ -1,0 +1,34 @@
+Command line:
+   TB_SORTER_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55260
+
+Tue Mar 17 21:24:57 2020
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5164.93 Meg
+
+ Total Signals          : 33
+ Total Nets             : 138
+ Total Signal Drivers   : 14
+ Total Blocks           : 5
+ Total Primitive Blocks : 3
+ Total Processes        : 11
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 499
+
+** Failure:End of simulation
+User(VHDL) Code Called Simulation Stop
+In process TB_SORTER.vhd:stim_proc 
+ 
+
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 5479.5 Meg
+
+Tue Mar 17 21:25:33 2020
+

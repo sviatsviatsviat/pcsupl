@@ -1,0 +1,5 @@
+vhdl work "GPRMP.vhd"
+vhdl work "ROM_IF.vhd"
+vhdl work "ROM.vhd"
+vhdl work "ROM_UNIT.vhd"
+vhdl work "ROM_UNIT_X.vhd"

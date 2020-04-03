@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/Master Degree/PCSUPL/GPR/RAM_IF_ADDR_SEL.xst" -ofn "E:/Master Degree/PCSUPL/GPR/RAM_IF_ADDR_SEL.syr" 

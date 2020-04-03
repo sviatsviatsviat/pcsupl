@@ -1,0 +1,3 @@
+vhdl work "StackMP.vhd"
+vhdl work "LIFO.vhd"
+vhdl work "LIFO_UNIT.vhd"

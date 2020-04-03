@@ -1,0 +1,503 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: LIFO_UNIT.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "LIFO_UNIT.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "LIFO_UNIT"
+Output Format                      : NGC
+Target Device                      : xc7a100t-2-csg324
+
+---- Source Options
+Top Module Name                    : LIFO_UNIT
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\Master Degree\PCSUPL\Stack\StackMP.vhd" into library work
+Parsing package <StackMP>.
+Parsing package body <StackMP>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Stack\LIFO.vhd" into library work
+Parsing entity <LIFO>.
+Parsing architecture <Behavioral> of entity <lifo>.
+Parsing VHDL file "E:\Master Degree\PCSUPL\Stack\LIFO_UNIT.vhd" into library work
+Parsing entity <LIFO_UNIT>.
+Parsing architecture <Mixed> of entity <lifo_unit>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <LIFO_UNIT> (architecture <Mixed>) with generics from library <work>.
+
+Elaborating entity <LIFO> (architecture <Behavioral>) with generics from library <work>.
+INFO:HDLCompiler:679 - "E:\Master Degree\PCSUPL\Stack\LIFO.vhd" Line 133. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <LIFO_UNIT>.
+    Related source file is "E:\Master Degree\PCSUPL\Stack\LIFO_UNIT.vhd".
+        Size = 6
+    Found 8-bit 4-to-1 multiplexer for signal <data_in> created at line 59.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <LIFO_UNIT> synthesized.
+
+Synthesizing Unit <LIFO>.
+    Related source file is "E:\Master Degree\PCSUPL\Stack\LIFO.vhd".
+        Size = 6
+    Found 8-bit register for signal <s_lifo_regs<1>>.
+    Found 8-bit register for signal <s_lifo_regs<2>>.
+    Found 8-bit register for signal <s_lifo_regs<3>>.
+    Found 8-bit register for signal <s_lifo_regs<4>>.
+    Found 8-bit register for signal <s_lifo_regs<5>>.
+    Found 8-bit register for signal <s_lifo_regs<0>>.
+    Found 2-bit register for signal <s_lifo_state>.
+    Found 3-bit register for signal <process_LIFO.pointer>.
+    Found 2-bit register for signal <n0291[1:0]>.
+    Found finite state machine <FSM_0> for signal <s_lifo_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 2                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | l_empty                                        |
+    | Power Up State     | l_empty                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <process_LIFO.pointer[2]_GND_7_o_add_17_OUT> created at line 85.
+    Found 3-bit subtractor for signal <GND_7_o_GND_7_o_sub_147_OUT<2:0>> created at line 127.
+    Found 3-bit subtractor for signal <GND_7_o_GND_7_o_sub_207_OUT<2:0>> created at line 142.
+    Found 8-bit 3-to-1 multiplexer for signal <s_lifo_state[1]_X_7_o_wide_mux_177_OUT> created at line 76.
+    Found 8-bit 3-to-1 multiplexer for signal <s_lifo_state[1]_X_7_o_wide_mux_178_OUT> created at line 76.
+    Found 8-bit 3-to-1 multiplexer for signal <s_lifo_state[1]_X_7_o_wide_mux_179_OUT> created at line 76.
+    Found 8-bit 3-to-1 multiplexer for signal <s_lifo_state[1]_X_7_o_wide_mux_180_OUT> created at line 76.
+    Found 8-bit 3-to-1 multiplexer for signal <s_lifo_state[1]_X_7_o_wide_mux_181_OUT> created at line 76.
+    Found 8-bit 3-to-1 multiplexer for signal <s_lifo_state[1]_X_7_o_wide_mux_182_OUT> created at line 76.
+    Found 2-bit 3-to-1 multiplexer for signal <s_lifo_state[1]_X_7_o_wide_mux_184_OUT> created at line 76.
+    Found 8-bit 6-to-1 multiplexer for signal <s_lifo_tos> created at line 140.
+    Found 8-bit 6-to-1 multiplexer for signal <GND_7_o_X_7_o_wide_mux_207_OUT> created at line 142.
+    Found 8-bit 4-to-1 multiplexer for signal <s_lifo_regs[0][7]_s_lifo_regs[0][7]_mux_113_OUT> created at line 84.
+    Found 8-bit 4-to-1 multiplexer for signal <s_lifo_regs[1][7]_s_lifo_regs[1][7]_mux_114_OUT> created at line 84.
+    Found 8-bit 4-to-1 multiplexer for signal <s_lifo_regs[2][7]_s_lifo_regs[2][7]_mux_115_OUT> created at line 84.
+    Found 8-bit 4-to-1 multiplexer for signal <s_lifo_regs[3][7]_s_lifo_regs[3][7]_mux_116_OUT> created at line 84.
+    Found 8-bit 4-to-1 multiplexer for signal <s_lifo_regs[4][7]_s_lifo_regs[4][7]_mux_117_OUT> created at line 84.
+    Found 8-bit 4-to-1 multiplexer for signal <s_lifo_regs[5][7]_s_lifo_regs[5][7]_mux_118_OUT> created at line 84.
+    Found 1-bit 4-to-1 multiplexer for signal <s_lifo_flags_empty_s_lifo_flags_empty_MUX_20_o> created at line 84.
+    Found 8-bit 4-to-1 multiplexer for signal <s_lifo_regs[0][7]_s_lifo_regs[0][7]_mux_168_OUT> created at line 118.
+    Found 8-bit 4-to-1 multiplexer for signal <s_lifo_regs[1][7]_s_lifo_regs[1][7]_mux_169_OUT> created at line 118.
+    Found 8-bit 4-to-1 multiplexer for signal <s_lifo_regs[2][7]_s_lifo_regs[2][7]_mux_170_OUT> created at line 118.
+    Found 8-bit 4-to-1 multiplexer for signal <s_lifo_regs[3][7]_s_lifo_regs[3][7]_mux_171_OUT> created at line 118.
+    Found 8-bit 4-to-1 multiplexer for signal <s_lifo_regs[4][7]_s_lifo_regs[4][7]_mux_172_OUT> created at line 118.
+    Found 8-bit 4-to-1 multiplexer for signal <s_lifo_regs[5][7]_s_lifo_regs[5][7]_mux_173_OUT> created at line 118.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  53 D-type flip-flop(s).
+	inferred  77 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <LIFO> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 2
+# Registers                                            : 8
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+ 8-bit register                                        : 6
+# Multiplexers                                         : 78
+ 1-bit 2-to-1 multiplexer                              : 7
+ 1-bit 4-to-1 multiplexer                              : 1
+ 2-bit 2-to-1 multiplexer                              : 1
+ 2-bit 3-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 43
+ 8-bit 3-to-1 multiplexer                              : 6
+ 8-bit 4-to-1 multiplexer                              : 13
+ 8-bit 6-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 2
+# Registers                                            : 53
+ Flip-Flops                                            : 53
+# Multiplexers                                         : 78
+ 1-bit 2-to-1 multiplexer                              : 7
+ 1-bit 4-to-1 multiplexer                              : 1
+ 2-bit 2-to-1 multiplexer                              : 1
+ 2-bit 3-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 43
+ 8-bit 3-to-1 multiplexer                              : 6
+ 8-bit 4-to-1 multiplexer                              : 13
+ 8-bit 6-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <U_LIFO/FSM_0> on signal <s_lifo_state[1:2]> with gray encoding.
+----------------------
+ State    | Encoding
+----------------------
+ l_empty  | 00
+ l_normal | 01
+ l_full   | 11
+----------------------
+
+Optimizing unit <LIFO_UNIT> ...
+
+Optimizing unit <LIFO> ...
+INFO:Xst:2261 - The FF/Latch <U_LIFO/s_lifo_state_FSM_FFd1> in Unit <LIFO_UNIT> is equivalent to the following FF/Latch, which will be removed : <U_LIFO/s_lifo_flags_full_0> 
+INFO:Xst:3203 - The FF/Latch <U_LIFO/s_lifo_state_FSM_FFd2> in Unit <LIFO_UNIT> is the opposite to the following FF/Latch, which will be removed : <U_LIFO/s_lifo_flags_full_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block LIFO_UNIT, actual ratio is 0.
+FlipFlop U_LIFO/process_LIFO.pointer_0 has been replicated 1 time(s)
+FlipFlop U_LIFO/process_LIFO.pointer_1 has been replicated 3 time(s)
+FlipFlop U_LIFO/process_LIFO.pointer_2 has been replicated 1 time(s)
+FlipFlop U_LIFO/s_lifo_state_FSM_FFd2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 59
+ Flip-Flops                                            : 59
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : LIFO_UNIT.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 165
+#      GND                         : 1
+#      LUT2                        : 2
+#      LUT3                        : 20
+#      LUT4                        : 14
+#      LUT5                        : 41
+#      LUT6                        : 76
+#      MUXF7                       : 11
+# FlipFlops/Latches                : 59
+#      FDC                         : 3
+#      FDCE                        : 56
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 48
+#      IBUF                        : 30
+#      OBUF                        : 18
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              59  out of  126800     0%  
+ Number of Slice LUTs:                  153  out of  63400     0%  
+    Number used as Logic:               153  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    158
+   Number with an unused Flip Flop:      99  out of    158    62%  
+   Number with an unused LUT:             5  out of    158     3%  
+   Number of fully used LUT-FF pairs:    54  out of    158    34%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          49
+ Number of bonded IOBs:                  49  out of    210    23%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 59    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.328ns (Maximum Frequency: 429.553MHz)
+   Minimum input arrival time before clock: 3.303ns
+   Maximum output required time after clock: 2.312ns
+   Maximum combinational path delay: 1.105ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 2.328ns (frequency: 429.553MHz)
+  Total number of paths / destination ports: 1023 / 67
+-------------------------------------------------------------------------
+Delay:               2.328ns (Levels of Logic = 3)
+  Source:            U_LIFO/s_lifo_state_FSM_FFd2 (FF)
+  Destination:       U_LIFO/s_lifo_regs_0_7 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: U_LIFO/s_lifo_state_FSM_FFd2 to U_LIFO/s_lifo_regs_0_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             22   0.398   0.909  U_LIFO/s_lifo_state_FSM_FFd2 (U_LIFO/s_lifo_state_FSM_FFd2)
+     LUT6:I0->O            1   0.105   0.000  U_LIFO/Mmux_s_lifo_state[1]_X_7_o_wide_mux_177_OUT1052_F (N112)
+     MUXF7:I0->O           8   0.306   0.490  U_LIFO/Mmux_s_lifo_state[1]_X_7_o_wide_mux_177_OUT1052 (U_LIFO/Mmux_s_lifo_state[1]_X_7_o_wide_mux_177_OUT105)
+     LUT4:I2->O            1   0.105   0.000  U_LIFO/Mmux_s_lifo_state[1]_X_7_o_wide_mux_177_OUT81 (U_LIFO/s_lifo_state[1]_X_7_o_wide_mux_177_OUT<3>)
+     FDCE:D                    0.015          U_LIFO/s_lifo_regs_0_3
+    ----------------------------------------
+    Total                      2.328ns (0.929ns logic, 1.399ns route)
+                                       (39.9% logic, 60.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 1076 / 174
+-------------------------------------------------------------------------
+Offset:              3.303ns (Levels of Logic = 5)
+  Source:            PUSHDATA<1> (PAD)
+  Destination:       U_LIFO/s_lifo_regs_1_7 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: PUSHDATA<1> to U_LIFO/s_lifo_regs_1_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.841  PUSHDATA_1_IBUF (PUSHDATA_1_IBUF)
+     LUT5:I0->O            7   0.105   0.633  Mmux_data_in81 (data_in<7>)
+     LUT3:I0->O            1   0.105   0.793  U_LIFO/Mmux_s_lifo_tos13111_SW4 (N92)
+     LUT6:I0->O            1   0.105   0.599  U_LIFO/Mmux_s_lifo_state[1]_X_7_o_wide_mux_178_OUT161 (U_LIFO/Mmux_s_lifo_state[1]_X_7_o_wide_mux_178_OUT16)
+     LUT6:I3->O            1   0.105   0.000  U_LIFO/Mmux_s_lifo_state[1]_X_7_o_wide_mux_178_OUT162 (U_LIFO/s_lifo_state[1]_X_7_o_wide_mux_178_OUT<7>)
+     FDCE:D                    0.015          U_LIFO/s_lifo_regs_1_7
+    ----------------------------------------
+    Total                      3.303ns (0.436ns logic, 2.867ns route)
+                                       (13.2% logic, 86.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 170 / 18
+-------------------------------------------------------------------------
+Offset:              2.312ns (Levels of Logic = 3)
+  Source:            U_LIFO/process_LIFO.pointer_1 (FF)
+  Destination:       TOS_1<7> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: U_LIFO/process_LIFO.pointer_1 to TOS_1<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            51   0.398   0.913  U_LIFO/process_LIFO.pointer_1 (U_LIFO/process_LIFO.pointer_1)
+     LUT5:I0->O            1   0.105   0.451  U_LIFO/Mmux_s_lifo_tos_162 (U_LIFO/Mmux_s_lifo_tos_161)
+     LUT3:I1->O            1   0.105   0.339  U_LIFO/Mmux_s_lifo_tos_163 (TOS_1_2_OBUF)
+     OBUF:I->O                 0.000          TOS_1_2_OBUF (TOS_1<2>)
+    ----------------------------------------
+    Total                      2.312ns (0.608ns logic, 1.704ns route)
+                                       (26.3% logic, 73.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4 / 2
+-------------------------------------------------------------------------
+Delay:               1.105ns (Levels of Logic = 3)
+  Source:            PUSHDATA<0> (PAD)
+  Destination:       EMPTY (PAD)
+
+  Data Path: PUSHDATA<0> to EMPTY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.660  PUSHDATA_0_IBUF (PUSHDATA_0_IBUF)
+     LUT3:I0->O            1   0.105   0.339  EMPTY1 (EMPTY_OBUF)
+     OBUF:I->O                 0.000          EMPTY_OBUF (EMPTY)
+    ----------------------------------------
+    Total                      1.105ns (0.106ns logic, 1.000ns route)
+                                       (9.6% logic, 90.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    2.328|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.33 secs
+ 
+--> 
+
+Total memory usage is 4700976 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

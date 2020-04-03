@@ -1,0 +1,12 @@
+[Inputs]
+CLK
+RST
+PC_EN
+IR_EN
+L
+E
+=ROM_DATA[11:0]=
+[Outputs]
+=ROM_ADR[4:0]=
+=IR_OUT[11:0]=
+[BiDir]
